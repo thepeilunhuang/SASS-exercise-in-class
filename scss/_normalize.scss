@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: $fontFamily;
+}
+
+h2, h3{
+    color: $header;
+    text-transform: capitalize;
+    
+}
+
+h2{
+    color: $bgColorLightBlue;
+    text-transform: capitalize;
+    width: 100%;
+    border-bottom: 3px solid $bgColorLightBlue;
+    font-size: 32px;
+
+}

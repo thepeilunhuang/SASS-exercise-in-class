@@ -1,0 +1,138 @@
+@media (min-width:300px){
+
+    .grid-gallery{
+        @include flexBox(column,center,center,wrap);
+        padding: 2%;
+        .gallery-bottom {
+            background-color: $bgColorLightGray;
+            padding: 2%;
+
+            h3{
+                padding: 5% 0%;
+            }
+
+            aside{
+                width: 350px;
+                height: 270px;
+                @include bgPic($picMobile);
+            }
+        }
+
+        [class^="gallery-box-"]{
+            padding-left: 3%;
+            padding: 5%;
+            background-color: $bgColorLightGray
+            @include flexBox(column, flex-start, flex-start, nowrap,0,50px);
+        }
+    }
+
+
+    .subscribe{
+        background-color: $bgColorLightBlue;
+        color: white;
+        padding: 5%;
+        @include borderBox(2vh, solid, white);
+        @include flexBox(column, center, center, nowrap);
+        > h2{
+            width: 80%;
+            padding: 15%;
+            text-align: center;
+            color: white;
+        }
+
+        > p{
+            padding: 1%;
+            text-align: center;
+        }
+
+        > form {
+            width: 80%;
+            @include flexBox(column, center, flex-start, nowrap, 20px);
+        }
+
+        [type="email"]{
+            width: 90%;
+            padding: 4%;
+            color: white;
+            background-color: $color-1;
+            &::placeholder {
+                color: white;
+            }
+        }
+        [type="submit"]{
+            width: 70%;
+            padding: 3%;
+            color: white;
+            font-weight: 600;
+            background-color: $bgColorLightBlue;
+            @include borderBox(3px, solid, white)
+        }
+    }
+
+    .contact{
+        padding: 3%;
+        @include flexBox(column, center, center,nowrap);
+
+        > h2 {
+            width: 100%;
+            color: $bgColorLightBlue;
+            border-bottom: 3px solid $bgColorLightBlue;
+        }
+
+        > p {
+            width: 70%;
+            text-align: center;
+            padding: 10% 0%;
+            font-size: 24px;
+        }
+
+        > form{
+            width: 90%;
+            @include flexBox(column, center, center, nowrap, 20px)
+
+        }
+
+        [type="text"], [type="email"], textarea{
+            @include borderBox(1px, solid, $bgOverlay-2);
+            font-family: $fontFamily;
+            padding: 2%;
+            width: 90%;
+        }
+
+        textarea{
+            height: 25vh;
+        }
+
+        [type="submit"] {
+            background-color: $bgColorLightBlue;
+            color: white;
+            font-weight: 600;
+            width:90%;
+            padding: 2.5%;
+        }
+
+
+
+
+
+
+    }
+    .footer{
+        @include flexBox(column, center, center, nowrap, 50px);
+        background-color: $bgColorLightGray;
+        padding: 2%;
+        height: 30vh;
+        color: $bgBody;
+    
+        .icons{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                color: $bgBody;
+                text-decoration: none;
+            }
+        }
+    }
+}
