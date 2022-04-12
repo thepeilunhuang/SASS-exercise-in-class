@@ -6,21 +6,52 @@
     <!-- reposive web 就必須要有下面那行 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Class-11</title>
 </head>
 <body>
+    <header class="header" id="header">
+        <h2>
+            ALPINES
+        </h2>
+        <a href="#link" class="fa-solid fa-bars"></a>
+        <div class="hader-div">
+            <h3>
+                Hellow, welcom to Mountains
+            </h3>
+            <p>
+                Mountainsis reposoive website for everone. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur excepturi blanditiis quo pariatur!
+            </p>
+        </div>
+    </header>
     <main>
-
         <!-- service section -->
         <section class="service" id="service">
             <h2>
                 services
             </h2>
             <div class="service-box-1">
-                <aside></aside>
+                <aside class="fa-solid fa-display"></aside>
+                <h3>
+                    About icons
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia delectus soluta nostrum. Fugit maiores quo asperiores.
+                </p>
+            </div>
+            <div class="service-box-2">
+                <aside class="fa-solid fa-database"></aside>
+                <h3>
+                    About icons
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia delectus soluta nostrum. Fugit maiores quo asperiores.
+                </p>
+            </div>
+            <div class="service-box-3">
+                <aside class="fa-solid fa-download"></aside>
                 <h3>
                     About icons
                 </h3>
@@ -47,41 +78,23 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit?
                     </p>    
-
                 </div>
-            </article>
-            <article class="gallery-bottom">
-                <div class="gallery-box-1">
-                    <aside></aside>
-                    <h3>Be Happy and Healthy</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit?
-                    </p>    
-
-                </div>
-            </article>
-            <article class="gallery-bottom">
                 <div class="gallery-box-2">
                     <aside></aside>
                     <h3>Be Happy and Healthy</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit?
                     </p>    
-
                 </div>
-            </article>
-            <article class="gallery-bottom">
                 <div class="gallery-box-3">
                     <aside></aside>
                     <h3>Be Happy and Healthy</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit?
-                    </p>    
-
+                    </p> 
                 </div>
             </article>
         </section>
-
 
         <!-- subscribe section -->
         <section class="subscribe" id="subscribe">
@@ -92,7 +105,7 @@
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et iusto, reprehenderit a obcaecati minus consequatur. Eligendi reprehenderit accusamus quam, omnis quidem explicabo animi?
             </p>
             <form>
-                <input type="email" name="email" id="email" placeholder="Type your email here">
+                <input type="email" name="email" id="email-subscribe" placeholder="Type your email here">
                 <!-- 因為屬於不同的form所以即便name跟下方那個一樣，彼此也不會相互影響 -->
                 <input type="submit" name="btn-submit" value="Subscribe">
             </form>
@@ -106,16 +119,16 @@
             <p>
                 Feel free to send us a message about anything!
             </p>
-            <form>
+            <form data-form="testing">
                 <input type="text" name="name" id="name" placeholder="Your name...">
                 <input type="email" name="email" id="email" placeholder="Your email...">
                 <input type="text" name="subject" id="subject" placeholder="Subject...">
                 <textarea placeholder="Your message..."></textarea>
                 <input type="submit" value="SEND" name="btn-submit" id="btn-submit">
             </form>
-
         </section>
     </main>
+    
     <footer class="footer" id="footer">
         <!-- div 用來放footer里的icons -->
         <div class="icons">

@@ -1,0 +1,60 @@
+@media (min-width : 1000px) {
+
+    .gallery-bottom {
+        %gallery-box {
+            @include flexBox(row,space-evenly,center);
+            width: 25%;
+        }
+
+        [class^="gallery-box-"] {
+            @extend %gallery-box;
+        }
+    }
+
+    .subscribe {
+        h2 {
+            padding: 2%
+        }
+        p {
+            font-size: 28px;
+            padding-bottom: 2%;
+        }
+        form {
+            @include flexBox(row,center,center,nowrap,0,30px);
+        }
+        [type="email"] {
+            width: 40%;
+            padding: 1.5%;
+        }
+        [type="submit"] {
+            padding: 1%;
+        }
+    }
+
+    .contact {
+        p {
+            padding: 3%;
+        }
+        [name="name"],[name="email"],[name="subject"] {
+            padding: 1%;
+            width: 22%;
+            font-size: 20px;
+        }
+        textarea {
+            font-size: 20px;
+            width: 83%;
+        }
+
+        [type="submit"] {
+            padding: 1%;
+            width: 88%;
+            font-size: 24px;
+        }
+    }
+
+    .footer {
+        .icons {
+            width: 20%;
+        }
+    }
+}

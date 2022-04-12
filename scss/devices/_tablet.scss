@@ -1,0 +1,85 @@
+@media (min-width: 700px) {
+
+    .header {
+        h2 {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 28px;
+        }
+    }
+
+    .service {
+        @include flexBox(row,space-evenly,center,wrap,50px);
+
+        [class^="service-box-"] {
+            width: 30%;
+        }
+
+        [class*="fa-solid"] {
+            width: 10vh;
+            height: 10vh;
+            font-size: 30px;
+        }
+    }
+
+    .grid-gallery {
+        font-size: larger;
+    }
+
+    .grid-gallery > .gallery-bottom {
+        @include flexBox(row,space-evenly,center,wrap,50px);
+        [class*="gallery-box-"] {
+            padding: 3%;
+            width: 40%;
+        }
+    }
+
+    .subscribe {
+        padding: 3%;
+        h2 {
+            padding: 5%;
+        }
+
+        p {
+            padding: 0% 0% 5%;
+        }
+        
+        [type="email"] {
+            padding: 2%;
+            width: 100%;
+            &::placeholder {
+                font-size: larger;
+            }
+        }
+
+        [type="submit"] {
+            padding: 2%;
+            width: fit-content;
+        }
+    }
+
+    .contact {
+        [name="name"],[name="email"] {
+            width: 35%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 110px;
+        }
+    }
+
+    .footer {
+        height: 15vh;
+
+        .icons {
+            width: 35%;
+        }
+    }
+}

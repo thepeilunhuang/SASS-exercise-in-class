@@ -1,40 +1,39 @@
 @mixin flexBox(
-    $direction: row,
-    $justifycontent:center,
-    $alignitems:center,
-    $wrap: nowrap,
-    $rowgap:0,
-    $columngap:0
+    $direction : row,
+    $justifyContent : center,
+    $alignItems : center,
+    $wrap : nowrap,
+    $rowGap : 0,
+    $columnGap : 0
 ){
-    
     display: flex;
-    justify-content: $justifycontent;
-    align-items: $alignitems;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
     flex-flow: $direction $wrap;
-    row-gap: $rowgap;
-    column-gap: $columngap;
+    row-gap: $rowGap;
+    column-gap: $columnGap;
 }
 
 @mixin borderBox(
-    $borderWidth: 1px,
-    $borderStyle: solid,
-    $borderColor: gray,
-    $borderRadius: 0
+    $borderWidth  : 1px,
+    $borderStyle  : solid,
+    $borderColor  : gray,
+    $borderRadius : 0
 ){
-    border-width: $borderWidth;
-    border-style: $borderStyle;
-    border-color: $borderColor;
-    border-radius: $borderRadius;
+    border-width  : $borderWidth;
+    border-style  : $borderStyle;
+    border-color  : $borderColor;
+    border-radius : $borderRadius;
 }
 
 @mixin bgPic(
     $background,
-    $bgPosition: center,
-    $bgSize:center,
-    $bgRepeat: no-repeat,
-){
-    background: url($background);
-    background-position: $bgPosition;
-    background-size: $bgSize;
-    background-repeat: $bgRepeat;
+    $bgPosition : center,
+    $bgSize     : contain,
+    $bgRepeat   : no-repeat
+) {
+    background          : url($background);
+    background-position : $bgPosition;
+    background-size     : $bgSize;
+    background-repeat   : $bgRepeat;
 }
